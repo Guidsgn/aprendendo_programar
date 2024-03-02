@@ -1,0 +1,253 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;500;600;700&family=Single+Day&display=swap');
+
+/*  */
+
+.interface {
+    display: flex;
+    justify-content: center;
+    width: 1280px;
+}
+
+/*  */
+
+.divider-bar {
+    margin: 12px;
+    height: 1px;
+    width: 65%;
+    background: linear-gradient(90deg, #00000000, #5a189a, #9d4edd, #5a189a, #00000000);
+}
+
+/* Header / Cabeçalho */
+
+header {
+    padding: 25px;
+    margin-bottom: 55px;
+    display: flex;
+    justify-content: center;
+    background: #10002b;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 3px 3px 12px #00000062;
+}
+
+.titulo-pagina {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 52px;
+}
+
+.titulo-pagina h1 {
+    font-size: 54px;
+    font-family: 'Single Day', cursive;
+    color: #c77dff;
+}
+.titulo-pagina h2 {
+    font-size: 38px;
+    font-family: 'Caveat', cursive;
+    color: #9d4edd;
+}
+.titulo-pagina h3 {
+    font-size: 22px;
+    font-family: 'Caveat', cursive;
+    color: #9d4edd;
+}
+
+/* Corpo d Site */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inicio-imgs {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.img-matue-i {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-matue-1 img {
+    width: 50%;
+    height: auto;
+    flex-grow: 1;
+    animation: 6s anim-rot ease-in-out infinite;
+}
+.img-matue-2 img {
+    width: 135%;
+    height: auto;
+    flex-grow: 2;
+    border-radius: 80px;
+    box-shadow: 3px 3px 8px #00000070;
+}
+
+@keyframes anim-rot {
+
+    0% {
+        rotate: 0;
+    }
+
+    25% {
+        filter: drop-shadow(3px 3px 5px #e0aaff36);
+    }
+
+    45% {
+        filter: drop-shadow(3px 3px 10px #e0aaffa9);
+    }
+
+    50% {
+        filter: drop-shadow(3px 3px 14px #e0aaff);
+    }
+
+    55% {
+        filter: drop-shadow(3px 3px 10px #e0aaffc4);
+    }
+
+    75% {
+        filter: drop-shadow(3px 3px 5px #e0aaff42);
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+
+}
+
+.infos-sec {
+    display: flex;
+    flex-direction: column;
+}
+
+.infos-sec p {
+    font-size: 22px;
+    font-family: 'Single Day', cursive;
+    color: #e0aaff;
+    text-align: center;
+}
+
+.timeline-disc {
+    padding: 20px;
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background: #3c096c;
+}
+
+.timeline-disc h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Single Day', cursive;
+    color: #e0aaff;
+}
+
+.timeline-disc details {
+    margin-top: 8px;
+    margin-bottom: 8pxpx;
+}
+
+.timeline-disc summary {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 720px;
+    background: #5a189a;
+    font-size: 26px;
+    font-family: 'Caveat', cursive;
+    color: #9d4edd;
+    border-radius: 8px;
+}
+
+.galeria {
+    display: flex;
+}
+
+.photo-matue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.photo-matue img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 30px;
+    height: 60%;
+    width: 60%;
+    background: #ffff;
+}
+
+.mais-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mais-sobre p {
+    font-size: 32px;
+    font-family: 'Caveat', cursive;
+    color: #e0aaff;
+}
+
+.mais-sobre q {
+    font-size: 28px;
+    color: #9d4edd;
+}
+
+.mais-sobre a {
+    color: #e0aaff;
+    transition: .5s;
+}
+.mais-sobre a:hover {
+    text-decoration: underline;
+    color: #9d4edd;
+}
+
+.mais-sobre span {
+    content: "\21FE";
+}
+
+/*  */
+
+footer {
+    margin-top: 40px;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #10002b;
+    border-radius: 21px 21px 0 0;
+}
+
+footer p {
+    font-size: 21px;
+    font-family: 'Caveat', cursive;
+    color: #e0aaff;
+}
+
+footer a {
+    transition: .5s;
+}
+footer a:hover {
+    color: #e0aaff;
+}

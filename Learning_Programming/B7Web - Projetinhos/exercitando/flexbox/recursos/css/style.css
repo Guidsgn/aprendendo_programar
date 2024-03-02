@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Maven+Pro:wght@400;600;800&display=swap');
+
+:root {
+
+    /* Fontes */
+
+    --fonte-g: 800;
+    --fonte-m: 600;
+    --fonte-p: 400;
+
+    /* Cores */
+
+    --cor-1: #2f3e46;
+    --cor-2: #354f52;
+    --cor-3: #52796f;
+    --cor-4: #84a98c;
+    --cor-5: #cad2c5;
+
+    --cor-6: #7f5539;
+    --cor-7: #9c6644;
+    --cor-8: #b08968;
+    --cor-9: #ddb892;
+    --cor-10: #e6ccb2;
+    --cor-11: #ede0d4;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+    background-color: var(--cor-1);
+}
+
+ul, li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+/*  */
+
+h1 {
+    font-weight: var(--fonte-g);
+}
+
+h2 {
+    font-weight: var(--fonte-m);
+}
+
+h3 {
+    font-weight: var(--fonte-m);
+}
+
+p {
+    font-weight: var(--fonte-p);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    width: 55%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: var(--font-fina);
+    font-size: 12px;
+    color: var(--cor-4);
+    letter-spacing: 0.1rem;
+}
+.divider::before, 
+.divider::after {
+    content: '';
+    height: 1.5px;
+    flex-grow: 1;
+}
+.divider::before {
+    margin-right: var(--text-divider-gap);
+    background-image: linear-gradient(to right, transparent, var(--cor-4));
+}
+.divider::after {
+    margin-left: var(--text-divider-gap);
+    background-image: linear-gradient(to left, transparent, var(--cor-4));
+}
+
+main .divider {
+    padding: 120px 0 145px 0;
+}
+
+/*  */
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header nav {
+    position: fixed;
+    padding: 3px;
+    margin: 21px;
+    margin-bottom: 30px;
+    width: 720px;
+    background-color: var(--cor-2);
+    box-shadow: 3px 3px 12px #0000002f;
+    border-radius: 18px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul a {
+    font-weight: var(--fonte-m);
+    color: var(--cor-8);
+}
+
+nav li,
+nav a {
+    transition: .5s;
+}
+nav li:hover,
+nav a:hover {
+    transform: scale(1.1);
+    color: var(--cor-9);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 200px;
+    margin-top: 235px;
+}
+
+.pt-principal {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.pt-principal h1 {
+    font-size: 48px;
+    color: var(--cor-9);
+    word-wrap: break-word;
+}
+
+.pt-principal p {
+    font-size: 20px;
+    color: var(--cor-8);
+    margin-top: -20px;
+    word-wrap: break-word;
+}
+
+.img-principal-1 {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 21px;
+    transition: .5s;
+}
+.img-principal-1:hover {
+    transform: scale(0.9);
+    filter: drop-shadow(3px 3px 12px #00000027);
+}
+
+.pt-secundaria img {
+    width: 375px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.img-sec {
+    transition: .5s;
+}
+.img-sec:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(3px 3px 12px #00000027);
+}
+
+.pt-secundaria {
+    display: flex;
+    flex-direction: row;
+}
+
+.cont-s1, 
+.cont-s2, 
+.cont-s3 {
+    margin: 5px;
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pt-secundaria div h2 {
+    font-size: 24px;
+    color: var(--cor-5);
+}
+
+.pt-secundaria div p {
+    width: 88%;
+    text-indent: 2em;
+    font-size: 16px;
+    color: var(--cor-4);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--cor-2);
+    box-shadow: -3px -3px 8px #1921255b;
+    border-radius: 30px 30px 0 0;
+}
+
+footer .pt1-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer .pt2-footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer .logo-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: .5s;
+}
+.logo-footer:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+footer .logo-footer p {
+    font-family: 'Caveat', cursive;
+    font-size: 34px;
+    color: var(--cor-5);
+}
+
+footer .infos-footer address {
+    cursor: default;
+    text-align: center;
+    font-size: 16px;
+    color: var(--cor-5);
+    font-style: normal;
+    line-height: 22px;
+}
+
+footer .txt-footer p {
+    cursor: default;
+    font-size: 14px;
+    color: var(--cor-4);
+}
+
+footer .txt-footer p span {
+    transition: .5s;
+}
+footer .txt-footer p span:hover {
+    cursor: pointer;
+    color: var(--cor-5);
+    text-decoration: underline;
+}
+
+footer img {
+    width: 10%;
+    height: 10%;
+}
+
+/*  */

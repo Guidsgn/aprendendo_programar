@@ -1,0 +1,30 @@
+/* 
+____                _____       _       _____                  
+|  _ \         _    / ____|     (_)     |  __ \                 
+| |_) |_   _  (_)  | |  __ _   _ _      | |  | |___  __ _ _ __  
+|  _ <| | | |      | | |_ | | | | |     | |  | / __|/ _` | '_ \ 
+| |_) | |_| |  _   | |__| | |_| | |  _  | |__| \__ \ (_| | | | |
+|____/ \__, | (_)   \_____|\__,_|_| (_) |_____/|___/\__, |_| |_|
+        __/ |                                        __/ |      
+       |___/                                        |___/        
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Rethink+Sans:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e2fdff;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.interface {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}

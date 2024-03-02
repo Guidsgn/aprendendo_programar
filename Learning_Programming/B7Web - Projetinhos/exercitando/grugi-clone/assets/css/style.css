@@ -1,0 +1,116 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f3ee;
+}
+
+.interface {
+    width: 1850px;
+}
+
+/* Header */
+
+header {
+    width: 1024px;
+    height: 60px;
+}
+
+.interface .nav-bar {
+    margin: 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-bar nav ul {
+    display: flex;
+    gap: 12px;
+}
+.nav-bar nav li {
+    font-size: 16px;
+    color: #1c1c1c;
+    transition: .5s;
+}
+.nav-bar nav li:hover {
+    transform: scale(1.1);
+}
+.nav-bar nav a {
+    color: #1c1c1c;
+}
+
+.nav-bar .other-infos-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-bar .other-infos-nav a img {
+    width: 20px;
+    height: 20px;
+}
+.nav-bar .other-infos-nav a {
+    transition: .5s;
+}
+.nav-bar .other-infos-nav a:hover {
+    transform: scale(1.2);
+}
+
+.nav-bar .img-infos-nav {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+.img-infos-nav img {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+/* Corpo do Site / Main */
+
+.interface .principal-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.principal-page .logo-gugri {
+    margin-top: 75px;
+    width: 1024px;
+    height: 167px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.principal-page .logo-gugri img {
+    width: 272px;
+    height: 92px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Footer */
+
+footer {
+    background: #daddd8;
+}

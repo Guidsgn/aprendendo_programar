@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="shortcut icon" href="">
+
+    <title>Formulário Simples</title>
+</head>
+<body>
+    
+    <main>
+        <section class="interface">
+            <div class="form-box">
+                <div class="formulario">
+                    <h1>Informações Pessoais</h1>
+                    <div class="div-bar"></div>
+                    <form action="/index-submit.html" method="get">
+                        <label for="nome">
+                            <span>・Nome:</span>
+                            <input type="text" name="nome" placeholder="Digite seu primeiro nome..." id="nome" required>
+                        </label>
+                        <label for="sobrenome">
+                            <span>・Sobrenome:</span>
+                            <input type="text" name="sobrenome" placeholder="Digite seu segundo nome..." id="sobrenome">
+                        </label>
+                        <label for="email">
+                            <span>・E-mail:</span>
+                            <input type="email" name="email" placeholder="Digite seu melho e-mail..." id="email" required>
+                        </label>
+                        <label for="senha">
+                            <span>・Senha:</span>
+                            <input type="password" name="senha" placeholder="Digite uma senha..." id="senha" required>
+                        </label>
+                        <label for="enviar" id="enviar-box">
+                            <input type="submit" id="enviar-btn">
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FlexCenter</title>
+    <link rel="stylesheet" href="recursos/css/estilo.css">
+    <link rel="stylesheet" href="recursos/css/global.css">
+    <link rel="shortcut icon" href="recursos/imgs/favicon.ico">
+
+    <script type="text/javascript">
+
+        window.onload = function(){
+            document.querySelector(".menu-mobile").addEventListener("click", function(){
+                if(document.querySelector(".menu-nav nav ul").style.display == 'flex') {
+                    document.querySelector(".menu-nav nav ul").style.display = 'none';
+                } else  {
+                    document.querySelector(".menu-nav nav ul").style.display = 'flex';
+                }
+            });
+        };
+
+    </script>
+
+</head>
+<body>
+    
+    <header>
+        <div class="interface">
+            <div class="menu-logo">
+                <a href=""><img src="recursos/imgs/flexcenter-logo-text.png" alt=""></a>
+            </div>
+
+            <div class="menu-nav">
+                <nav>
+                    <div class="menu-mobile">
+                        <div class="mm-line"></div>
+                        <div class="mm-line"></div>
+                        <div class="mm-line"></div>
+                    </div>
+                    <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Departamentos</a></li>
+                        <li><a href="#">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="banner-p">
+        <div class="interface column">
+            <div class="texto-p">
+                <h1>Experiência de alto nível</h1>
+                <h2>FlexCenter é um modelo responsivo perfeito para todos os tamanhos de tela</h2>
+            </div>
+
+            <div class="banners-op">
+                <div class="banner-op-1">
+                    <div class="titulo-banner-op">Caso de Emergência</div>
+                    <div class="texto-banner-op">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat ipsam error eaque laudantium vitae sequi saepe laboriosam hic magnam, cupiditate, et repellat! Culpa, quos dignissimos.</div>
+                    <a href="">Veja mais...</a>
+                </div>
+                <div class="banner-op-2">
+                    <div class="titulo-banner-op">Tabela de Doutores</div>
+                    <div class="texto-banner-op">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat ipsam error eaque laudantium vitae sequi saepe laboriosam hic magnam, cupiditate, et repellat! Culpa, quos dignissimos.</div>
+                    <a href="">Veja mais...</a>
+                </div>
+                <div class="banner-op-3">
+                    <div class="titulo-banner-op">Horários de Atendimento</div>
+                    <div class="horas-banner-op">
+                        <div class="hora-1">
+                            <div>Segunda - Sexta</div>
+                            <div>08:00 - 17:00</div>
+                        </div>
+                        <div class="hora-2">
+                            <div>Sabádo</div>
+                            <div>09:30 - 17:30</div>
+                        </div>
+                        <div class="hora-3">
+                            <div>Domingo</div>
+                            <div>09:30 - 15:00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="geral">
+        <div class="interface">
+            <section>
+                <div class="widget">
+                    <div class="titulo-widget">
+                        <div class="texto-titulo-widget">Últimas Novidades</div>
+                        <div class="bar-titulo-widget"></div>
+                    </div>
+
+                    <div class="body-widget flex">
+                        
+                        <article>
+                            <a href="">
+                            <div class="news-data">
+                                    <div class="news-posted-at">09 ABR 2004</div>
+                                    <div class="news-comments">3</div>
+                                </div>
+
+                                <div class="news-thumb">
+                                    <img src="/recursos/imgs/img-posts.png" alt="">
+                                </div>
+
+                                <div class="news-titulo">
+                                    Lorem Ipsum
+                                </div>
+
+                                <div class="news-desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique facere, beatae corporis alias necessitatibus quasi soluta aut fugiat neque veniam maxime ullam, iusto magnam odit assumenda recusandae mollitia? Eaque, reprehenderit!
+                                </div>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a href="">
+                            <div class="news-data">
+                                    <div class="news-posted-at">09 ABR 2004</div>
+                                    <div class="news-comments">3</div>
+                                </div>
+
+                                <div class="news-thumb">
+                                    <img src="/recursos/imgs/img-posts.png" alt="">
+                                </div>
+
+                                <div class="news-titulo">
+                                    Lorem Ipsum
+                                </div>
+
+                                <div class="news-desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. iusto magnam odit assumenda recusandae mollitia?
+                                </div>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a href="">
+                            <div class="news-data">
+                                    <div class="news-posted-at">09 ABR 2004</div>
+                                    <div class="news-comments">3</div>
+                                </div>
+
+                                <div class="news-thumb">
+                                    <img src="/recursos/imgs/img-posts.png" alt="">
+                                </div>
+
+                                <div class="news-titulo">
+                                    Lorem Ipsum
+                                </div>
+
+                                <div class="news-desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique facere, beatae corporis alias necessitatibus quasi soluta aut fugiat neque veniam maxime ullam, iusto magnam odit assumenda recusandae mollitia? Eaque, reprehenderit!
+                                </div>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a href="">
+                            <div class="news-data">
+                                    <div class="news-posted-at">09 ABR 2004</div>
+                                    <div class="news-comments">3</div>
+                                </div>
+
+                                <div class="news-thumb">
+                                    <img src="/recursos/imgs/img-posts.png" alt="">
+                                </div>
+
+                                <div class="news-titulo">
+                                    Lorem Ipsum
+                                </div>
+
+                                <div class="news-desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique facere, beatae corporis alias necessitatibus quasi soluta aut fugiat neque veniam maxime ullam, iusto magnam odit assumenda recusandae mollitia?
+                                </div>
+                            </a>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+            <aside>
+                <div class="widget">
+                    <div class="titulo-widget">
+                        <div class="texto-titulo-widget">Departamentos</div>
+                        <div class="bar-titulo-widget"></div>
+                    </div>
+
+                    <div class="body-widget">
+                        <div class="dep-quadr-widget">
+                            <div class="quadr-widget qd-fl-1"><img src="/recursos/imgs/responsive-icon.png" alt="Ícone"> Responsividade</div>
+                            <div class="quadr-widget qd-fl-2"><img src="/recursos/imgs/organizacao-icon.png" alt="Ícone"> Organização</div>
+                        </div>
+                        <div class="dep-quadr-widget">
+                            <div class="quadr-widget qd-fl-1"><img src="/recursos/imgs/alinhar-icon.png" alt="Ícone"> Alinhamento</div>
+                            <div class="quadr-widget qd-fl-2"><img src="/recursos/imgs/b7web-icon.png" alt="Ícone"> B7Web</div>
+                        </div>
+                        <div class="dep-quadr-widget">
+                            <div class="quadr-widget qd-fl-1"><img src="/recursos/imgs/curso-icon.png" alt="Ícone"> Aprendizado</div>
+                            <div class="quadr-widget qd-fl-2"><img src="/recursos/imgs/medic-icon.png" alt="Ícone"> Cuidados</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="titulo-widget">
+                        <div class="texto-titulo-widget">Marque uma Consulta</div>
+                        <div class="bar-titulo-widget"></div>
+                    </div>
+
+                    <div class="body-widget">
+                        <div class="m-const-area">
+                            <div class="sobre-m-consulta">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+
+                            <div class="infos-m-consulta">
+                                <div class="info-m-cons-1">
+                                    <img src="/recursos/imgs/flexcenter-logo.png"> pelo telefone: +55 (51) 99999-9999
+                                </div>
+    
+                                <div class="info-m-cons-2">
+                                    <img src="/recursos/imgs/flexcenter-logo.png"> pelo e-mail: contato@flexcenter.com
+                                </div>
+    
+                                <div class="info-m-cons-3">
+                                    <img src="/recursos/imgs/flexcenter-logo.png"> ou pelo centro de atendimento online
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <footer>
+        <div class="interface flexColumn">
+
+            <div class="footer-menu">
+                <div class="fm-1">
+                    <div class="titulo-fm">Plano de Atendimento</div>
+                    <div class="texto-fm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nobis illum, iusto doloribus velit ut ad eveniet.   →</div>
+                </div>
+                <div class="fm-2">
+                    <div class="titulo-fm">Registros</div>
+                    <div class="texto-fm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsam porro accusantium quaerat dignissimos deserunt dolor aliquid vel.   →</div>
+                </div>
+                <div class="fm-3">
+                    <div class="titulo-fm">Fatura on-line</div>
+                    <div class="texto-fm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam nulla id non aspernatur quia eligendi!   →</div>
+                </div>
+            </div>
+
+            <div class="footer-area">
+                <div class="fa-1">
+                    <div class="widget">
+                        <div class="titulo-widget">
+                            <div class="texto-titulo-widget">Clinica FlexCenter</div>
+                            <div class="bar-titulo-widget"></div>
+                        </div>
+    
+                        <div class="body-widget">
+                            <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, corporis excepturi ipsum atque corrupti doloribus nam commodi.</div>
+
+                            <div class="fa1-infos">
+                                <div class="f-infos-1">
+                                    Cliníca FlexCenter <br>
+                                    Rua Farlaine 456 <br>
+                                    Bairro Itapumba <br>
+                                    VIC 3033, Brasil
+                                </div>
+
+                                <div class="f-infos-2">
+                                    +55 (51) 99999-9999 <br>
+                                    +41 (67) 99999-9999 <br>
+                                    contato@flexcenter.com
+                                </div>
+                            </div>
+
+                            <div class="fa1-redes">
+                                <div class="rede-quadrado"> <img src="/recursos/imgs/facebook-logo.png"> </div>
+                                <div class="rede-quadrado"> <img src="/recursos/imgs/twitter-logo.png"> </div>
+                                <div class="rede-quadrado"> <img src="/recursos/imgs/instagram-logo.png"> </div>
+                                <div class="rede-quadrado"> <img src="/recursos/imgs/email-logo.png"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fa-2">
+                    <div class="widget">
+                        <div class="titulo-widget">
+                            <div class="texto-titulo-widget">Posts Recentes</div>
+                            <div class="bar-titulo-widget"></div>
+                        </div>
+    
+                        <div class="body-widget">
+                            <div class="f-post1">
+                                <div class="post-titulo"><span>→</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                <div class="post-data">14 horas atrás</div>
+                            </div>
+                            <div class="f-post2">
+                                <div class="post-titulo"><span>→</span> Minus veniam accusamus atque inventore?</div>
+                                <div class="post-data">2 dias atrás</div>
+                            </div>
+                            <div class="f-post3">
+                                <div class="post-titulo"><span>→</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem!</div>
+                                <div class="post-data">6 dias atrás</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fa-3">
+                    <div class="widget">
+                        <div class="titulo-widget">
+                            <div class="texto-titulo-widget">Ultímos Tweets</div>
+                            <div class="bar-titulo-widget"></div>
+                        </div>
+    
+                        <div class="body-widget">
+                            <div class="f-post1">
+                                <div class="post-titulo"><span>→</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                                <div class="post-data">14 horas atrás</div>
+                            </div>
+                            <div class="f-post2">
+                                <div class="post-titulo"><span>→</span> Minus veniam accusamus atque inventore?</div>
+                                <div class="post-data">2 dias atrás</div>
+                            </div>
+                            <div class="f-post3">
+                                <div class="post-titulo"><span>→</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem!</div>
+                                <div class="post-data">6 dias atrás</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copy">
+                <div class="bar-footer-copy"></div>
+                <div class="text-footer-copy">Site para Estudos Baseado no Template de: <a href="https://quanticalabs.com" target="_blank">QuanticaLabs</a></div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
