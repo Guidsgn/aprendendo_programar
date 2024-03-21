@@ -1,0 +1,357 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20877,20878,20879,20880');
+
+/* --------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+
+    font-size: 62.5%;
+
+}
+
+/* --------------------------------------------- */
+
+body {
+    font-size: 1.6rem;
+    background-color: #4427b9;
+}
+
+/* --------------------------------------------- */
+
+#app {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    min-height: 100vh;
+}
+
+/* --------------------------------------------- */
+
+main {
+    padding-top: 0.8rem;
+}
+
+main .inner {
+    padding: 4.8rem 3.2rem;
+    height: 100%;
+    background-color: #0d0c11;
+    border-top-left-radius: 3.2rem;
+}
+
+/* --------------------------------------------- */
+
+nav {
+    padding: 3.2rem 2.7rem 0 3.5rem;
+}
+
+nav .logo img {
+    width: 12.0rem;
+    height: auto;
+    transition: .5s;
+}
+nav .logo img:hover {
+    transform: scale(1.1);
+}
+
+ul {
+    margin-top: 6rem;
+    min-width: 11.5rem;
+    display: grid;
+    gap: 3.6rem;
+    list-style: none;
+}
+
+li a {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    color: #726a96;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    transition: .5s;
+}
+
+a.active,
+a:hover {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+a .bi {
+    font-size: 2rem;
+}
+
+/* --------------------------------------------- */
+
+section.titulo-perfil {
+    padding: 1.1rem 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-perfil img {
+    width: 8.0rem;
+    height: 8.0rem;
+    border-radius: 50%;
+    border: 2px solid #4427b9;
+    transition: .5s;
+}
+.titulo-perfil img:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 3.2rem;
+    color: #ffffff;
+}
+h1 i {
+    opacity: 60%;
+    transition: .5s;
+}
+h1 i:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+/* --------------------------------------------- */
+
+section.filtro {
+    padding: 0 2.4rem;
+    margin-top: 3.2rem;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.filtro button {
+    padding: 1.2rem 3.2rem;
+    border: 0;
+    border-radius: .5rem;
+    background-color: #4427b9;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    transition: .5s;
+}
+.filtro button span {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 1.4rem;
+    text-shadow: .0rem .4rem 1.6rem rgba(22, 22, 22, 0.1);
+}
+.filtro button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.filtro button .bi {
+    font-size: 2.0rem;
+}
+
+input {
+    font-family: 'Gilroy-Light', sans-serif;
+    color: #ffffff;
+}
+.input-wrapper {
+    padding: 0 2.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+    background-color: #0d0c11;
+    border: 0.07rem solid #191720;
+    border-radius: .8rem;
+    transition: .5s;
+}
+.input-wrapper .bi {
+    color: #ffffff;
+    font-size: 2.4rem;
+    opacity: 60%;   
+}
+.input-wrapper input {
+    border: 0;
+    width: 100%;
+    outline: 0;
+    background-color: #0d0c11;
+}
+.input-wrapper:has(:focus) {
+    outline: .2rem white solid;
+}
+.input-wrapper input::placeholder {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 1.6rem;
+    color: #ffffff;
+    opacity: 45%;
+}
+
+/* Modal Style */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+  }
+  
+  .modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    background-color: #0d0c11;
+    margin: 19% 30%;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    width: 40%;
+    border-radius: 2.1rem;
+  }
+
+  .modal-content input {
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    background-color: #08070a;
+    border: 1px solid #979797;
+  }
+  .modal-content select {
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    background-color: #08070a;
+    border: 1px solid #979797;
+  }
+
+  .modal-content .modal-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.0rem;
+  }
+  
+  .close {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #979797;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* --------------------------------------------- */
+
+section.kanban {
+    padding-top: 3.2rem;
+    display: flex;
+    gap: 4.8rem;
+}
+
+section.kanban > * {
+    padding: 2.4rem;
+    flex: 1;
+}
+
+section.kanban h2 {
+    padding: 1.2rem 0;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+    opacity: 80%;
+}
+section.kanban .line-divider {
+    margin-bottom: 2.4rem;
+    margin-top: 1.4rem;
+    height: 2px;
+    width: 80%;
+    background: linear-gradient(90deg, #979797, #97979700);
+}
+
+.card {
+    padding: 2.4rem;
+    background: #0a0a0e;
+    box-shadow: .0rem .4rem 1.6rem #1a1a1a93;
+    border-radius: .8rem;
+    line-height: 130%;
+    transition: 500ms;
+}
+.card .status {
+    margin-bottom: 1.6rem;
+    width: 8.5rem;
+    height: 0.8rem;
+    background: #4427b9;
+    border-radius: 2.1rem 0rem 2.1rem 0rem;
+}
+.card h3 {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+.card p {
+    margin-top: 1rem;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #ffffff;
+    opacity: 85%;
+}
+
+.card .tags {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-weight: 500;
+    color: #0a0a0e;
+}
+.card .tags span {
+    padding: .4rem .8rem;
+    font-size: 1.2rem;
+    line-height: 130%;
+    background: #726a96;
+    border-radius: .8rem;
+}
+
+.dropzone {
+    padding: 2rem;
+    display: flex;
+    gap: 3.0rem;
+    flex-direction: column;
+    transition: 500ms;
+}
+
+.highlight {
+    background-color: #726a9642;
+    border-radius: .8rem;
+}
+.over {
+    background-color: #4d37b350;
+    border-radius: .8rem;
+}
+
+.is-dragging {
+    cursor: move;
+    opacity: 0.3;
+}
+
+/* --------------------------------------------- */

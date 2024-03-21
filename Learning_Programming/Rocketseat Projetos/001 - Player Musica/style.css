@@ -1,0 +1,201 @@
+/*  */
+
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Ojuju:wght@200..800&display=swap');
+
+/* Globais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Gerais da Pagina */
+
+body {
+    background-color: #0F0D13;
+}
+
+#app {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-areas: 
+        'A B'
+        'A C';
+    gap: 32px;
+    place-content: center;
+}
+
+/* Player 001 */
+
+#player-1 {
+    padding: 50px 38px;
+    grid-area: A;
+}
+
+#player-1 .wrapper {
+    width: 190px;
+}
+
+#player-1 img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: .5s;
+}
+#player-1 img:hover {
+    transform: scale(1.1);
+}
+
+#player-1 .info {
+    margin-top: 28px;
+}
+
+/* Player 002 */
+
+#player-2 {
+    grid-area: B;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Player 003 */
+
+#player-3 {
+    grid-area: C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Player */
+
+.player {
+    padding: 28px;
+    background-color: #2A2141;
+    border-radius: 12px;
+    border: 1px solid #ffffff00;
+    transition: .5s;
+}
+.player:hover {
+    border: 1px solid #ffffff;
+    transform: scale(1.1);
+    filter: drop-shadow(5px 5px 8px #6c57a721);
+}
+
+.player img {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: .5s;
+}
+.player img:hover {
+    transform: scale(1.1);
+}
+
+.info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.player h1 {
+    margin-bottom: 9.6px;
+    color: #ffffff;
+    font-family: "Madimi One", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    cursor: default;
+}
+
+.player p {
+    color: #979797;
+    font-family: "Ojuju", sans-serif;
+    cursor: default;
+}
+
+.controls {
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controls .prev,
+.controls .play,
+.controls .next {
+    transition: .5s;
+}
+.controls .prev:hover,
+.controls .play:hover,
+.controls .next:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.horizontal .controls {
+    padding-inline: 57px;
+}
+
+.track {
+    margin-top: 28px;
+    position: relative;
+}
+.track::before {
+    position: absolute;
+    z-index: 2;
+    content: '';
+    height: 6px;
+    width: 100%;
+    display: block;
+    opacity: 0.3;
+    background: #D9D9D9;
+    border-radius: 10px;
+}
+.track::after {
+    content: '';
+    height: 6px;
+    width: 42%;
+    display: block;
+    background: #D9D9D9;
+    border-radius: 10px;
+}
+
+.time {
+    margin-top: 9.6px;
+    opacity: 0.7;
+    color: #C4C4CC;
+    font-family: "Ojuju", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+}
+
+/* Responsivo */
+
+@media (max-width: 670px) {
+
+    #app {
+        padding-block: 60px;
+        margin: auto;
+        max-width: 270px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .horizontal .controls {
+        padding-inline: 30px;
+    }
+
+}

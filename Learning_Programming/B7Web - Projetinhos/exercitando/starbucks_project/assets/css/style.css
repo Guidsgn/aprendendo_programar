@@ -217,23 +217,184 @@ header .header--menu img {
     background-position: center;
 }
 
-/* Area 002 */
+/* Area 003 */
 
 .area3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.area3 .area3--content {
-    padding: 80px;
+.area3-content {
+    padding: 270px 80px;
+    background-image: url('../images/bg2.jpg');
+    background-size: cover;
+    background-position: left;
 }
-.area3 .area3-text {
+.area3-text {
     margin-bottom: 50px;
     line-height: 25px;
 }
 
-.area3 .area3--img1 {
+.area3-img1 {
     background-image: url('../images/f5.jpg');
     background-size: cover;
     background-position: center;
+}
+
+/* Area 004 */
+
+.area4 {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    background: #e8e9ee;
+}
+
+.area4-content {
+    padding: 250px 80px;
+}
+.area4-text {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area4-img1 {
+    background-image: url('../images/bg3.jpg');
+    background-position: right;
+}
+
+/* Area 005 */
+
+.area5 {
+    background-image: url('../images/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+/* Footer */
+
+footer {
+    padding: 80px;
+    background: #333333;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer hr {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #e8e9ee00, #e8e9ee, #e8e9ee00);
+}
+
+.footer span {
+    color: #da2323;
+    font-size: 20px;
+    transition: .5s;
+}
+.footer span:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.footer a {
+    color: #184ee0;
+    transition: .3s;
+}
+.footer a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+/* Responsividade */
+
+@media (min-width: 769px) and (max-width: 1140px) {
+
+    .interface {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .interface {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .area1 {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .area2 {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .area3 {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .area4-img1 {
+        background-position: center;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    .interface {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header--menu {
+        margin-left: 20px;
+    }
+
+    .header--serach input {
+        max-width: 80px;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .banner--images img {
+        width: 50px;
+        height: 50px;
+        border: 3px solid #117050;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .area1,
+    .area2,
+    .area3,
+    .area4 {
+        grid-template-columns: 1fr;
+    }
+    .area1--content,
+    .area2--content,
+    .area3-content,
+    .area4-content {
+        padding: 40px;
+    }
+
+    .area5 {
+        height: 200px;
+    }
+
+    footer {
+        padding: 25px 40px;
+        font-size: 13px;
+    }
+
 }
