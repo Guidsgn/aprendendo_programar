@@ -877,7 +877,7 @@ input:focus {
 .sec-mapa {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-image: url('/recursos/imagens/mapa.png');
+    background-image: url('./recursos/imagens/mapa.png');
     background-size: cover;
     background-position: center;
 }
