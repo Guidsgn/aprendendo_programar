@@ -58,4 +58,36 @@ while (numero <= 10) {
 // }
 
 console.log(" ");
+console.log("------------------------------");
+console.log(" ");
+
+console.log("Exercicio de Loop");
+console.log(" ");
+
+// 1. Faça um loop que mostre as frutas
+
+let fruits = [
+    'Maça',
+    'Uva',
+    'Banana'
+];
+
+for(let fruit in fruits) {
+    console.log(fruits[fruit])
+}
+
+console.log(" ");
+console.log("------------------------------");
+console.log(" ");
+
+// 2. Conte de 1 até 100 através de um while
+
+let num = 1;
+
+while(num <= 100) {
+    console.log(`${num}`);
+    num++
+}
+
+console.log(" ");
 console.log("------------------------------")
