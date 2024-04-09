@@ -10,6 +10,8 @@ Aqui vocês podem ver um pouco da minha joirnada de evolução e estudos na prog
 - HTML
 - CSS
 - Javascript
+
+- Typescript
 - React
 
 ## 🧱 Como Contribuir para o Projeto
