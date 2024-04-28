@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Titillium Web", sans-serif;
+    background-color: #101010;
+}
+
+h1 {
+    color: #FFF;
+    margin-bottom: 20px;
+}
+.keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.key {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #FFF;
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+    transition: .1s;
+}
+.key > span {
+    font-size: 12px;
+}
+.key.active {
+    transform: scale(1.1);
+    border: 2px solid rgb(0, 68, 255);
+    color: rgb(0, 81, 255);
+}
+
+.composer {
+    width: 260px;
+    margin-top: 20px;
+}
+.composer #input {
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    padding: 10px 15px;
+    font-family: "Titillium Web", sans-serif;
+}
+.composer button {
+    width: 100%;
+    height: 40px;
+    background: none;
+    border: 2px solid #FFF;
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.composer button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 13px;
+}
