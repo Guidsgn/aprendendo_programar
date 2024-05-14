@@ -20,6 +20,7 @@ console.log(" ");
 
 class User { // "Template"
 
+    _age = 0;
     steps = 0;
 
     // Propiedades e Ações
@@ -39,6 +40,10 @@ class User { // "Template"
         } else {
             console.log('! Idade não aceita !')
         };
+    }
+
+    get age() {
+        return this._age;
     }
 
 }

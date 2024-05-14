@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Titillium Web", sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #151515;
+}
+
+h1 {
+    font-size: 36px;
+    color: #FFF;
+    margin-bottom: 18px;
+}
+
+.line-div {
+    height: 2px;
+    width: 80%;
+    background: linear-gradient(90deg, #c4c4c400, #c4c4c4, #c4c4c400);
+    margin-top: 18px;
+    margin-bottom: 30px;
+}
+
+.relogio {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+    background-color: #101010;
+}
+
+.riscos {
+    width: 100%;
+    height: 100%;
+    padding-left: 50%;
+    padding-top: 50%;
+    margin-top: -3px;
+}
+.risco {
+    width: 145px;
+    height: 5px;
+    position: absolute;
+    transform-origin: left;
+    display: flex;
+    justify-content: flex-end;
+}
+.risco .ponto {
+    width: 15px;
+    height: 100%;
+    background-color: #FFF;
+}
+
+.ponteiros {
+    width: 100%;
+    height: 100%;
+    padding-left: 50%;
+    padding-top: 50%;
+    margin-top: -100%;
+}
+.p {
+    transform-origin: left;
+    transform: rotate(0deg);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.p_s {
+    width: 100px;
+    height: 3px;
+    background-color: #F00;
+}
+.p_m {
+    width: 120px;
+    height: 7px;
+    background-color: #FFF;
+}
+.p_h {
+    width: 70px;
+    height: 10px;
+    background-color: #FFF;
+}
+.encaixe {
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+.digital {
+    color: #FFF;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 13px;
+}
